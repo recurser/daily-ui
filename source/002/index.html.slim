@@ -1,0 +1,47 @@
+---
+title:  'Design 002: Credit Card Form'
+---
+
+.dp-flex-container
+
+  .container
+    .row
+      .col-md-6.col-md-offset-3
+
+        .dp-box
+          .dp-heading
+            i.fa.fa-remove
+            | Card number is invalid
+
+          .dp-content
+
+            form
+
+              .row
+                .col-md-12
+                  .form-group
+                    .input-group.dp-error
+                      .input-group-addon
+                        i.fa.fa-credit-card
+                      input.form-control placeholder='Enter your card number' type='text' value="4111 1111 1111 1111"
+
+              .row
+                .col-md-6
+                  .form-group
+                    .input-group
+                      .input-group-addon
+                        i.fa.fa-lock
+                      input.form-control placeholder='CVC' type='text'
+
+                .col-md-6
+                  .form-group
+                    .input-group
+                      .input-group-addon
+                        i.fa.fa-calendar
+                      input.form-control placeholder='MM / YY' type='text'
+
+              .row
+                .col-md-12
+                  button.btn.btn-primary type='submit'
+                    ' Pay $25.00
+

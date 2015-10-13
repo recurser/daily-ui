@@ -1,0 +1,78 @@
+body.x002_index
+  $border-radius:      8px
+  $drop-shadow:        20px 20px 2px rgba(36,46,53,0.08)
+  $bg-light:           #6084A4
+  $color-white:        #fff
+  $color-error:        #D63230
+  $color-input:        #5683A5
+  $color-input-border: #CCDDEA
+  $color-button:       #39A9DB
+
+  background-color: #F39237
+  font-family:      'Lato', sans-serif
+
+  ::-webkit-input-placeholder
+    color: $color-input-border
+
+  .dp-flex-container
+    align-items: center
+    display:     flex
+    height:      100%
+    width:       100%
+
+  .container
+    flex: 1
+
+  .dp-box
+    background-color: $color-white
+    border-radius:    $border-radius
+    box-shadow:       $drop-shadow
+    overflow:         hidden
+
+    .dp-heading
+      color:            $color-white
+      background-color: $color-error
+      font-size:        1rem
+      font-weight:      bold
+      margin:           0
+      padding:          0.5rem 1rem
+      overflow:         hidden
+      text-align:       center
+
+      i.fa
+        color:     $color-white
+        float:     left
+        font-size: 1.5rem
+
+    .dp-content
+      padding: 2rem
+
+      .input-group-addon
+        background-color: rgba(238, 245, 251, 0.2)
+        border-color:     $color-input-border
+
+        i
+          color: $color-input
+          width: 1rem
+
+      input
+        background-color: rgba(238, 245, 251, 0.2)
+        border-color:     $color-input-border
+        border-left:      none
+        color:            $color-input
+        padding-left:     0
+
+      .input-group.dp-error
+        .input-group-addon
+          border-color: $color-error
+          i
+            color: $color-error
+        input
+          border-color: $color-error
+          color:        $color-error
+
+      button
+        color:            $color-white
+        background-color: $color-button
+        border:           none
+        width:            100%
