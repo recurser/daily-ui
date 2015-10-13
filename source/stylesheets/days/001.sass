@@ -1,0 +1,71 @@
+
+body.x001_index
+  $border-radius: 2px
+  $drop-shadow:   10px 10px 8px rgba(36,46,53,0.08)
+  $bg-light:      #6084A4
+  $color-white:   #fff
+  $color-light:   #f7f9fa
+  $color-dark:    #1B2B3B
+
+  background-image:  image-url('001/background.png')
+  background-repeat: no-repeat
+  background-size:   cover
+  color:             $color-dark
+  font-family:       'Lato', sans-serif
+
+  ::-webkit-input-placeholder
+    color: $bg-light
+
+  .dp-login-container
+    align-items: center
+    display:     flex
+    height:      100%
+    width:       100%
+
+  .container
+    flex: 1
+
+  h1.dp-heading
+    color:       $color-white
+    font-size:   1.5rem
+    margin:      0
+    padding:     1rem
+    text-align:  center
+    text-shadow: $drop-shadow
+
+  .dp-box
+    background-color: rgba(255, 255, 255, 1)
+    border-radius:    $border-radius
+    box-shadow:       $drop-shadow
+    overflow:         hidden
+
+    .dp-content
+      padding: 1rem
+
+      .input-group-addon
+        background-color:          $bg-light
+        border:                    none
+        border-top-left-radius:    $border-radius
+        border-bottom-left-radius: $border-radius
+        color:                     $color-light
+
+      input
+        background-color:           $color-light
+        border:                     none
+        border-top-right-radius:    $border-radius
+        border-bottom-right-radius: $border-radius
+        color:                      $bg-light
+
+      .btn-primary
+        background-color: $bg-light
+        border:           none
+        border-radius:    $border-radius
+        display:          inline-block
+        margin-bottom:    1rem
+
+  .dp-forgot-pass
+    color:           $color-light
+    display:         block
+    font-size:       0.8rem
+    margin-top:      0.5rem
+    text-shadow:     $drop-shadow
