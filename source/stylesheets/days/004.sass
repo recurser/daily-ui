@@ -1,0 +1,68 @@
+body.x004_index
+  $border-radius:        8px
+  $drop-shadow:          3px 3px 2px rgba(36,46,53,0.2)
+  $page-bg:              #C1DBE3
+  $page-gradient-bottom: $page-bg
+  $page-gradient-top:    darken($page-bg, 20)
+  $numeric-bg:           #373737
+
+  font-family:      'Lato', sans-serif
+
+  background-color: $page-bg
+
+
+  /* Safari 4-5, Chrome 1-9
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($page-gradient-bottom), to($page-gradient-top))
+  /* Safari 5.1, Chrome 10+
+  background: -webkit-linear-gradient(top, $page-gradient-top, $page-gradient-bottom)
+  /* Firefox 3.6+
+  background: -moz-linear-gradient(top, $page-gradient-top, $page-gradient-bottom)
+  /* IE 10
+  background: -ms-linear-gradient(top, $page-gradient-top, $page-gradient-bottom)
+  /* Opera 11.10+
+  background: -o-linear-gradient(top, $page-gradient-top, $page-gradient-bottom)
+
+  .dp-box
+
+    table
+      background-color: #F6FEAA
+      border-collapse:  separate
+      border-radius:    4px
+      border-spacing:   10px
+      font-weight:      bold
+      margin:           0 auto
+      padding:          10px
+
+      td
+        border-radius: 40px
+        box-shadow:    $drop-shadow
+        color:         $page-bg
+        color:         #fff
+        height:        40px
+        line-height:   40px
+        margin:        20px
+        padding:       0
+        text-align:    center
+        width:         40px
+
+      .dp-numeric
+        background-color: $numeric-bg
+
+      .dp-functional
+        background-color: rgba(55, 55, 55, 0.5)
+
+      .dp-result
+        background-color: rgba(55, 55, 55, 0.5)
+        border-radius:    4px
+        font-size:        20px
+        margin-bottom:    20px
+        padding-right:    15px
+        text-align:       right
+
+      .dp-separator
+        background-color: transparent
+        box-shadow:       none
+        font-size:        0
+        height:           3px
+        line-height:      0
+        padding:          0
