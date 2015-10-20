@@ -1,0 +1,85 @@
+body.x003_index
+  $navbar-link-color:    #fff
+  $success-color:        #26b548
+  $hero-gradient-top:    #2693D5
+  $hero-gradient-bottom: darken(#2693D5, 10)
+
+  font-family: 'Raleway', sans-serif
+
+  .dp-nav-wrapper
+    background-color: $hero-gradient-top
+    top:      0
+    width:    100%
+    z-index:  1
+
+    .nav-item
+      a
+        color:          $navbar-link-color
+        font-size:      12px
+        font-weight:    300
+        margin-left:    30px
+        padding-top:    6px
+        text-transform: uppercase
+
+      &.dp-demo a
+        border:        1px solid $navbar-link-color
+        padding:       5px 16px
+        border-radius: 100px
+
+  .dp-hero-wrapper
+    background-color: $hero-gradient-bottom
+    color:            $navbar-link-color
+    height:           800px
+    overflow:         hidden
+    position:         relative
+    text-align:       center
+    width:            100%
+
+    /* Safari 4-5, Chrome 1-9
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($hero-gradient-bottom), to($hero-gradient-top))
+    /* Safari 5.1, Chrome 10+
+    background: -webkit-linear-gradient(top, $hero-gradient-top, $hero-gradient-bottom)
+    /* Firefox 3.6+
+    background: -moz-linear-gradient(top, $hero-gradient-top, $hero-gradient-bottom)
+    /* IE 10
+    background: -ms-linear-gradient(top, $hero-gradient-top, $hero-gradient-bottom)
+    /* Opera 11.10+
+    background: -o-linear-gradient(top, $hero-gradient-top, $hero-gradient-bottom)
+
+    h1
+      font-size:   50px
+      font-weight: 100
+      margin-top:  70px
+      text-align:  center
+
+    h2
+      font-weight: 300
+      font-size:   18px
+      line-height: 28px
+      margin-top:  20px
+      text-align:  center
+
+    .btn-success
+      background-color: transparent
+      border:           1px solid $navbar-link-color
+      border-radius:    100px
+      color:            $navbar-link-color
+      display:          inline-block
+      margin-top:       40px
+
+    .dp-hero-mockup
+      bottom:     0
+      position:   absolute
+      text-align: center
+      width:      100%
+
+      img
+        width:   1000px
+        display: block
+        margin:  0 auto
+
+    img.dp-hero-graph
+      bottom:   0
+      left:     0
+      position: absolute
+      width:    100%

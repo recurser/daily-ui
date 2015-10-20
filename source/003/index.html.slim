@@ -1,0 +1,39 @@
+// https://jsfiddle.net/h603a8ps/4/
+
+.dp-nav-wrapper
+  .container
+    nav.navbar
+      button.navbar-toggler.hidden-sm-up.pull-right data-target="#exCollapsingNavbar2" data-toggle="collapse" type="button"
+        | ☰
+      #exCollapsingNavbar2.collapse.navbar-toggleable-xs
+        a.navbar-brand href="#"
+          = image_tag '003/logo-inverted.png', width: 170, height: 36
+        ul.nav.navbar-nav.pull-right
+          li.nav-item.active
+            a.nav-link href="#"
+              | Home
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link href="#"  Features
+          li.nav-item
+            a.nav-link href="#"  Pricing
+          li.nav-item.dp-demo
+            a.nav-link href="#"  Live Demo
+
+
+.dp-hero-wrapper
+  = image_tag '003/hero-graph.svg',             class: 'dp-hero-graph'
+
+  .dp-hero-mockup
+    = image_tag '003/macbook-mockup-cropped.png'
+
+  .container
+    h1
+      | Automated monitoring for AWS applications
+    h2
+      | An intelligent monitoring system that takes the guesswork out of devops.
+      br
+      | Receive realtime, actionable alerts when your application is in trouble, with zero setup.
+
+    a.btn.btn-success.btn-lg
+      | Get started in 1 minute
